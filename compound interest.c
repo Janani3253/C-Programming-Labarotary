@@ -9,13 +9,13 @@ int main()
    scanf("%f",&t);
   printf("Enter rate :");
    scanf("%f",&r);
-  int count=0,a=1;
+ 
    c=(1+r/100);
-  do
-  {
-    a=c*a;
-    count++;
-  }while(count<=t);
+   int i,a=1;
+   for(i=1;i<=t;i++)
+   {
+       a*=c;
+   }
    amt=p*a;
    ci=amt-p;
    printf("compound interest is %.3f ",ci);
