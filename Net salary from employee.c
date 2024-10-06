@@ -17,7 +17,7 @@ int main()
         bonus=basic*5/100;
         netsal=basic+travel+bonus;
     }
-    else if(basic<=50000 && basic>=250001)
+    else if(basic<=50000 && basic>=25001)
     {
         travel =basic*3/100;
         bonus=basic*10/100;
