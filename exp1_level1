@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() 
+{ 
+    int days,hours,mins,sec; 
+    scanf("%d%d%d%d",&days,&hours,&mins,&sec); 
+    int a,b,c,totalseconds;
+    a=days*24*60*60; 
+    b=hours*60*60; 
+    c=mins*60; 
+    totalseconds=a+b+c+sec; 
+    printf("Total seconds:%d",totalseconds);
+    return 0; 
+}
