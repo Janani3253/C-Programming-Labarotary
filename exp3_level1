@@ -1,0 +1,29 @@
+// Get 'n' number from the user and find the no.of positive, negative and zero without using array.
+#include<stdio.h>
+int main()
+{ 
+    int n,tem,po_count=0,ne_count=0,z=0; 
+    scanf("%d",&n); 
+    int i=1; 
+    while(i<=n) 
+    { 
+        scanf("%d",&tem); 
+        if(tem==0) 
+        { 
+        z++; 
+        } 
+        else if(tem>0) 
+        { 
+        po_count++; 
+        } 
+        else 
+        { 
+        ne_count++; 
+        } 
+        i++; 
+    } 
+    printf("The number of positive numbers:%d\n",po_count); 
+    printf("The number of negative numbers:%d\n",ne_count); 
+    printf("The number of zero:%d",z); 
+    return 0; 
+}
