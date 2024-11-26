@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main() 
+{ 
+    int n,tem=1; 
+    scanf("%d",&n);
+    for(int row=1;row<=n;row++)
+    {
+         for(int col=n;col>=row;col--) 
+         { 
+         printf("%d  ",tem);
+         tem++; 
+         }
+         printf("\n");
+    }
+    return 0;
+}
