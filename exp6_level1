@@ -1,0 +1,53 @@
+#include<stdio.h>
+void findidentify(int n,int m,int a[n][m])
+{
+    int i,j;
+    int zero=0,one=0;
+    if(n==m)
+    {
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            if(i==j && a[i][j]==0)
+            {
+                zero++;
+            }
+            else if(i!=j && a[i][j]==1)
+            {
+                one++;
+            }
+            
+        }
+    }
+    if(zero==n && one==(n*m)-n)
+    {
+        printf("1");
+    }
+    else
+    {
+        printf("0");
+    }
+    }
+    else
+    {
+        printf("Find indentify matrix is not possible");
+    }
+}
+int main()
+{
+    int n,m,i,j;
+    scanf("%d%d",&n,&m);
+    int a[n][m];
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    findidentify(n,m,a);
+
+    return 0;
+    
+}
