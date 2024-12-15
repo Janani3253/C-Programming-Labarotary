@@ -1,0 +1,67 @@
+#include<stdio.h>
+    struct rectangle{
+        int length;
+        int breadth;
+        int area;
+    };
+    struct circle{
+        int radius;
+        float area;
+    };
+    struct triangle{
+        float base;
+        float height;
+        float area;
+    };
+void rectangle(){
+    struct rectangle choice1;
+    scanf("%d%d",&choice1.length,&choice1.breadth);
+    printf("Area of rectangle:%d",choice1.length*choice1.breadth);
+}
+void circle(){
+         struct circle choice2;
+    scanf("%d",&choice2.radius);
+    printf("Area of circle:%.3f",3.14*choice2.radius*choice2.radius);
+}
+void triangle(){
+     struct triangle choice3;
+    scanf("%f%f",&choice3.base,&choice3.height);
+    printf("Area of triangle:%.3f",0.5*choice3.base*choice3.height);
+}
+
+int main(){
+    int choice;
+    scanf("%d",&choice);
+    switch(choice){
+    case 1:
+    rectangle();
+    break;
+    case 2:
+    circle();
+    break;
+ scanf("%d",&choice2.radius);
+    printf("Area of circle:%.3f",3.14*choice2.radius*choice2.radius);
+}
+void triangle(){
+     struct triangle choice3;
+    scanf("%f%f",&choice3.base,&choice3.height);
+    printf("Area of triangle:%.3f",0.5*choice3.base*choice3.height);
+}
+
+int main(){
+    int choice;
+    scanf("%d",&choice);
+    switch(choice){
+    case 1:
+    rectangle();
+    break;
+    case 2:
+    circle();
+    break;
+    case 3:
+    triangle();
+    break;
+    default:
+    printf("Invalid choice");
+}
+
