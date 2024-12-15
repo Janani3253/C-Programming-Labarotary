@@ -1,0 +1,40 @@
+#include<stdio.h>
+void arraysorts(int n,int a[n])
+{
+    int i,j,tem;
+    for(i=0;i<n-1;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]>a[j])
+            {
+            tem=a[i];
+            a[i]=a[j];
+            a[j]=tem;
+            }
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",a[i]);
+    }
+  }
+  int main()
+{
+    int n,i;
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    arraysorts(n,arr);
+    return 0;
+    
+}
+
+
+
+
+    
+   
