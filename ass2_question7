@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    union un
+    {
+    int x;
+    int y;
+    };
+union un ob;
+    scanf("%d",&ob.x);
+    printf("After fixing x value\n");
+    printf("X=%d\tY=%d\n",ob.x,ob.y);
+    scanf("%d",&ob.y);
+    printf("After fixing y value\n");
+    printf("X=%d\tY=%d",ob.x,ob.y);
+    return 0;
+}
